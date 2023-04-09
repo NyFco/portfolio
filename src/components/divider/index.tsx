@@ -8,14 +8,14 @@ const Divider: FC<{ direction?: 'vertical' | 'horizontal'; size?: number }> = ({
   direction = 'horizontal',
   size = 70,
 }) => {
-  const verifiedSize = size > 100 || size < 0 ? 70 : size;
+  const validatedSize = size > 100 || size < 0 ? 70 : size;
   return (
     <div
       style={{
         padding:
           direction === 'horizontal'
-            ? `0 ${(100 - verifiedSize) / 2}%`
-            : `${(100 - verifiedSize) / 2}% 0`,
+            ? `0 ${(100 - validatedSize) / 2}%`
+            : `${(100 - validatedSize) / 2}% 0`,
       }}
     >
       <div
