@@ -8,15 +8,19 @@ const theme = {
     xxl: '@media (min-width: 1600px)',
   },
   colors: {
-    primary: '#5460c8',
-    secondary: '#ffa801',
-    text: '#262d3a',
+    primary: '#222222',
+    secondary: '#777777',
+    textPrimary: '#ffffff',
+    textSecondary: '#666666',
   },
   fonts: ['Raleway', 'sans-serif'],
   fontSizes: {
+    xSmall: '0.5em',
     small: '1em',
-    medium: '2em',
-    large: '3em',
+    medium: '1.5em',
+    large: '2em',
+    xLarge: '3em',
+    xxLarge: '5em',
   },
 };
 
