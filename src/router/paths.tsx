@@ -1,4 +1,4 @@
-import { MainPage } from '../pages';
+import { AboutPage, MainPage } from '../pages';
 
 export interface Path {
   path: string;
@@ -8,6 +8,18 @@ export interface Path {
 const paths: Path[] = [
   {
     path: '/',
+    page: <MainPage />,
+  },
+  {
+    path: '/about',
+    page: <AboutPage />,
+  },
+  {
+    path: '/projects',
+    page: <MainPage />,
+  },
+  {
+    path: '/contact',
     page: <MainPage />,
   },
 ];
