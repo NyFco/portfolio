@@ -1,36 +1,27 @@
 import { FC } from 'react';
-import { FormattedMessage } from 'react-intl';
-import styled from 'styled-components';
 
-import { Divider } from '../../components';
+import { MainLayout, RGBLayout } from '../../layouts';
 
-const Layout = styled.div({
-  display: 'flex',
-  justifyContent: 'center',
-});
-
-const NameContainer = styled.div({
-  display: 'flex',
-  flexDirection: 'column',
-  textAlign: 'center',
-});
+const Content: FC = () => {
+  return (
+    <RGBLayout>
+      <h1 style={{ marginBottom: '30px' }}>About this site</h1>
+      <p style={{ marginLeft: '15px' }}>
+        A RESPONSIVE REACT APPLICATION TO REPRESENT MY FRONT-END SKILLS. Welcome
+        to my website.
+        <br />
+        <br /> Please feel free to read more about me, or you can check out my
+        resume, projects, view site statistics, or contact me.
+      </p>
+    </RGBLayout>
+  );
+};
 
 const MainPage: FC = () => {
   return (
-    <Layout>
-      <NameContainer>
-        <h1>
-          <FormattedMessage id="name.firstname" />
-        </h1>
-        <h2>
-          <FormattedMessage id="name.lastname" />
-        </h2>
-        <h2>
-          <FormattedMessage id="frontendev" />
-        </h2>
-        <Divider direction="horizontal" />
-      </NameContainer>
-    </Layout>
+    <MainLayout>
+      <Content />
+    </MainLayout>
   );
 };
 

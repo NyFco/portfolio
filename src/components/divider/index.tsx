@@ -4,10 +4,11 @@ import { FC } from 'react';
  * size should be between 0 and 100
  * @returns Vertical/Horizontal divider
  */
-const Divider: FC<{ direction?: 'vertical' | 'horizontal'; size?: number }> = ({
-  direction = 'horizontal',
-  size = 70,
-}) => {
+const Divider: FC<{
+  direction?: 'vertical' | 'horizontal';
+  size?: number;
+  color?: string;
+}> = ({ direction = 'horizontal', size = 70, color = '#ffffff' }) => {
   const validatedSize = size > 100 || size < 0 ? 70 : size;
   return (
     <div
@@ -22,7 +23,7 @@ const Divider: FC<{ direction?: 'vertical' | 'horizontal'; size?: number }> = ({
         style={{
           height: direction === 'horizontal' ? '2px' : '100%',
           width: direction === 'horizontal' ? '100%' : '2px',
-          backgroundColor: '#ffffff',
+          backgroundColor: color,
         }}
       />
     </div>

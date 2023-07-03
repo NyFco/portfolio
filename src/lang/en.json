@@ -2,5 +2,9 @@
   "name.firstname": "Yazdan",
   "name.lastname": "Vahidi Sharbaaf",
   "name.fullname": "Yazdan Vahidi Sharbaaf",
-  "frontendev": "Front-End Developer"
+  "frontendev": "Front-End Developer",
+  "mainPage.bio": "Hi, I’m Yazdan. I call my self a Web's beauty specialist but you can call me a Front-End Developer.",
+  "about": "About",
+  "projects": "Projects",
+  "contact": "Contact"
 }
