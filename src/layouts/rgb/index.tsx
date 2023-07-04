@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import styled from 'styled-components';
 
 const Layout = styled.div({
@@ -9,8 +9,14 @@ const Layout = styled.div({
   borderRadius: '20px',
 });
 
-const RGBLayout = ({ children }: { children: ReactNode }) => {
-  return <Layout>{children}</Layout>;
+const RGBLayout = ({
+  children,
+  style,
+}: {
+  children: ReactNode;
+  style?: CSSProperties;
+}) => {
+  return <Layout style={style}>{children}</Layout>;
 };
 
 export default RGBLayout;
